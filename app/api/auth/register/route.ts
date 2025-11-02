@@ -1,9 +1,8 @@
-// app/api/auth/register/route.ts
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import { signToken } from "../../../../lib/auth.mjs";
-import { connectDB } from "../../../../lib/db.js";
-import User from "../../../../models/User.mjs";
+import { signToken } from "../../../../lib/auth";
+import { connectDB } from "../../../../lib/db";
+import User from "../../../../models/User";
 
 
 export async function POST(req: Request) {

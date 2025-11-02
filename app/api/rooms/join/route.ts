@@ -1,7 +1,6 @@
-// app/api/rooms/join/route.ts
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/db.js";
-import User from "@/models/User.mjs";
+import { connectDB } from "@/lib/db";
+import User from "@/models/User";
 import jwt from "jsonwebtoken";
 
 const JWT_SECRET = process.env.JWT_SECRET || "replace_with_a_long_secret_value";

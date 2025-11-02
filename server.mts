@@ -1,12 +1,10 @@
-// server.mts
 import { createServer } from "node:http";
 import next from "next";
 import { Server } from "socket.io";
 import { connectDB } from "./lib/db.js";
-import Room from "./models/Room.mjs";
-import User from "./models/User.mjs";
-import Message from "./models/Message.mjs";
-// import { Message } from "./models/Message.mjs";
+import Room from "./models/Room.js";
+import User from "./models/User.js";
+import Message from "./models/Message.js";
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOSTNAME || "localhost";

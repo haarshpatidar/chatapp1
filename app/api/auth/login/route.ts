@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import { connectDB } from "../../../../lib/db";
-import { signToken } from "../../../../lib/auth.mjs";
-import User from "../../../../models/User.mjs";
+import { signToken } from "../../../../lib/auth";
+import User from "../../../../models/User";
 
 export async function POST(req: Request) {
   await connectDB();
